@@ -7,6 +7,16 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
+  <parent>
+    <groupId>io.bootique.parent</groupId>
+    <artifactId>bootique-parent</artifactId>
+    <version>0.12</version>
+  </parent>
+    <properties>
+        <main.class>com.summer.App</main.class>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
   <name>bootique_learn</name>
   <url>http://maven.apache.org</url>
   <build>
@@ -20,12 +30,12 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-shade-plugin</artifactId>
+        </plugin>
     </plugins>
   </build>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
 
   <dependencyManagement>
     <dependencies>

@@ -10,7 +10,7 @@ import io.bootique.jersey.JerseyModule;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args)
     {
         Module module = binder -> JerseyModule.contributeResources(binder).addBinding().to(HelloResource.class);
         Bootique.app(args).module(module).autoLoadModules().run();
