@@ -52,9 +52,9 @@ public class HelloResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/save")
-    public MyResponse saveName(JsonTest t){
+    public MyAnswer saveName(JsonTest t){
         tests.put(t.getId(), t);
-        MyResponse res = new MyResponse();
+        MyAnswer res = new MyAnswer();
         res.setMessage("OK");
         return res;
     }
@@ -62,14 +62,16 @@ public class HelloResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/{id}")
-    public String getTheName(@PathParam("id") int id){
+    public Response getTheName(@PathParam("id") int id){
         JsonTest test = tests.get(id);
         if(test == null){
             test = new JsonTest();
             test.setId(id);
             test.setName("Unknown " + Integer.toString(id));
         }
-        return test.getName();
+        MyAnswer ma = new MyAnswer();
+        ma.setMessage("Ok, name:" + test.getName());
+        return Response.status(200).type(MediaType.APPLICATION_JSON).entity(ma).build();
     }
 
 
@@ -95,7 +97,7 @@ class JsonTest{
 
 }
 
-class MyResponse{
+class MyAnswer{
     public String message;
 
     public void setMessage(String message) {

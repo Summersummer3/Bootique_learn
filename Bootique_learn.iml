@@ -43,7 +43,6 @@
     <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.13" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet:2.7" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet-core:2.7" level="project" />
-    <orderEntry type="library" name="Maven: org.glassfish.hk2.external:javax.inject:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.core:jersey-common:2.7" level="project" />
     <orderEntry type="library" name="Maven: javax.annotation:javax.annotation-api:1.2" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.7" level="project" />
@@ -63,5 +62,9 @@
     <orderEntry type="library" name="Maven: org.eclipse.persistence:org.eclipse.persistence.core:2.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.persistence:org.eclipse.persistence.asm:2.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.persistence:org.eclipse.persistence.antlr:2.5.0" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jersey.ext:jersey-mvc:2.5" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jersey.ext:jersey-mvc-jsp:2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.hk2.external:javax.inject:2.2.0-b21" level="project" />
   </component>
 </module>
